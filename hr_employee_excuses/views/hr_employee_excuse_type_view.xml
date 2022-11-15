@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Root Menu-->
+        <menuitem id="menu_hr_employee_excuses_root"
+                  name="Employee excuses"
+                  parent="hr.menu_hr_root"
+                  sequence="4"/>
+        <!-- Employee excuse Types-->
+        <record id="hr_hr_employee_excuse_type_form_view" model="ir.ui.view">
+            <field name="name">hr.employee.excuse.type.form.view</field>
+            <field name="model">hr.employee.excuse.type</field>
+            <field name="arch" type="xml">
+                <form string="Employee Excuse Type">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Type"/>
+                            </h1>
+                        </div>
+                        <field name="note"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_hr_employee_excuse_tree_type_view" model="ir.ui.view">
+            <field name="name">hr.employee.excuse.tree.type.view</field>
+            <field name="model">hr.employee.excuse.type</field>
+            <field name="arch" type="xml">
+                <tree string="Employee Excuse Types">
+                    <field name="name"/>
+                    <field name="note"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+         <record id="hr_hr_employee_excuse_type_action" model="ir.actions.act_window">
+            <field name="name">excuse Types</field>
+            <field name="res_model">hr.employee.excuse.type</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_hr_employee_excuse_type"
+                  name="Excuse Types"
+                  action="hr_hr_employee_excuse_type_action"
+                  parent="hr_employee_excuses.menu_hr_employee_excuses_root"
+                  sequence="100"/>
+
+
+
+
+    </data>
+</odoo>

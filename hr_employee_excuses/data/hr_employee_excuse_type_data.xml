@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="excuse_type_shift_change" model="hr.employee.excuse.type">
+            <field name="name">Shift Change</field>
+            <field name="note">Type of excuse that employees submit to Change their shifts</field>
+        </record>
+        <record id="excuse_type_cleared" model="hr.employee.excuse.type">
+            <field name="name">Employee Replacement</field>
+            <field name="note">Type of excuse that employees submit to Replace Employee</field>
+        </record>
+
+    </data>
+</odoo>

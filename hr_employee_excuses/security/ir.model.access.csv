@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acccess_hr_employee_excuse,hr_employee_excuse,model_hr_employee_excuse,hr.group_hr_user,1,1,1,1
+acccess_hr_employee_excuse_type,hr_employee_excuse_type,model_hr_employee_excuse_type,hr.group_hr_user,1,0,0,0
+acccess_hr_employee_excuse_type_manager,hr_employee_excuse_type_manager,model_hr_employee_excuse_type,hr.group_hr_manager,1,1,1,1
