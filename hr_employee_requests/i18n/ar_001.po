@@ -1,0 +1,475 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_requests
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-14 03:07+0000\n"
+"PO-Revision-Date: 2022-11-14 05:15+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_employee_request_view_employee_form_inherit
+msgid ""
+"<span class=\"o_stat_text\">\n"
+"                                Requests\n"
+"                            </span>"
+msgstr ""
+"<span class=\"o_stat_text\">\n"
+"                                الأعذار\n"
+"                            </span>"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "ترتيب استثناء النشاط"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "رمز نوع النشاط"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields.selection,name:hr_employee_requests.selection__hr_employee_request__state__cancel
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__company_id
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__company_id
+msgid "Company"
+msgstr "الشركه"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields.selection,name:hr_employee_requests.selection__hr_employee_request__state__confirmed
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__create_uid
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__create_uid
+msgid "Created by"
+msgstr "إنشي بواسطه"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__create_date
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__create_date
+msgid "Created on"
+msgstr "انشئ فى"
+
+#. module: hr_employee_requests
+#: code:addons/hr_employee_requests/models/hr_employee_request.py:0
+#, python-format
+msgid ""
+"Current user:%s ]\n"
+" have no related employee!!!, please check it first"
+msgstr ""
+"المستخدم الحالي:%s ]\n"
+"ليس له اى موظف مرتبط به!!!, من فضلك راجع بيانات المستخدم اولا"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Date End"
+msgstr "تاريخ نهاية التصريح"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Date Start"
+msgstr "تاريخ بداية التصريح"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Details....."
+msgstr "التفاصيل..."
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__display_name
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__display_name
+msgid "Display Name"
+msgstr "الاسم"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields.selection,name:hr_employee_requests.selection__hr_employee_request__state__draft
+msgid "Draft"
+msgstr "جديد"
+
+#. module: hr_employee_requests
+#: model:ir.model,name:hr_employee_requests.model_hr_employee
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__employee_id
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_employee_requests
+#: model:hr.employee.request.type,name:hr_employee_requests.request_type_cleared
+msgid "Employee Replacement"
+msgstr "تبديل الموظف"
+
+#. module: hr_employee_requests
+#: model:ir.actions.act_window,name:hr_employee_requests.hr_hr_employee_request_action
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_tree_view
+msgid "Employee Request"
+msgstr "أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_type_form_view
+msgid "Employee Request Type"
+msgstr "نوع أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_tree_type_view
+msgid "Employee Request Types"
+msgstr "أنواع أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee__emp_request_ids
+#: model:ir.ui.menu,name:hr_employee_requests.menu_hr_employee_requests_root
+msgid "Employee Requests"
+msgstr "أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__date_end
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "End Date"
+msgstr "تاريخ نهاية التصريح"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Final Approve"
+msgstr "موافقة نهائية"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields.selection,name:hr_employee_requests.selection__hr_employee_request__state__done
+msgid "Final Approved"
+msgstr "موافقة نهائية"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_follower_ids
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعين(شركاء)"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "أيفونه الخط Font awesome مثلاً fa-tasks"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Group By..."
+msgstr "تجميع..."
+
+#. module: hr_employee_requests
+#: model:ir.model,name:hr_employee_requests.model_hr_employee_request
+msgid "HR Employee Request"
+msgstr "أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model,name:hr_employee_requests.model_hr_employee_request_type
+msgid "HR Employee Request Type"
+msgstr "نوع أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__id
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__identification_id
+msgid "Identification No"
+msgstr "البطاقة الشخصيه"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_needaction
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__job_id
+msgid "Job Position"
+msgstr "الوظيفة"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request____last_update
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__write_uid
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__write_date
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "عدد المرفقات"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields.selection,name:hr_employee_requests.selection__hr_employee_request__state__approved
+msgid "Mang. Approved"
+msgstr "موافقه المدير المباشر"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Manger Approve"
+msgstr "موافقه المدير المباشر"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__note
+msgid "Note"
+msgstr "ملاحظه"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Number"
+msgstr "عدد"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الاوامر"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__request_details
+msgid "Request Details"
+msgstr "التفاصيل..."
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__type_id
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request_type__name
+msgid "Request Type"
+msgstr "نوع أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.actions.act_window,name:hr_employee_requests.hr_hr_employee_request_type_action
+#: model:ir.ui.menu,name:hr_employee_requests.menu_hr_employee_request_type
+msgid "Request Types"
+msgstr "أنواع أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.ui.menu,name:hr_employee_requests.menu_hr_employee_requests
+msgid "Requests"
+msgstr "أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee__requests_count
+msgid "Requests Count"
+msgstr "أعذار الموظفين"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__activity_user_id
+msgid "Responsible User"
+msgstr "المسؤل"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_form_view
+msgid "Set to Draft"
+msgstr "اعاده إلى جديد"
+
+#. module: hr_employee_requests
+#: model:hr.employee.request.type,name:hr_employee_requests.request_type_shift_change
+msgid "Shift Change"
+msgstr "تغير شيفتات"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__show_approve_button
+msgid "Show Approve Button"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__date_start
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Start Date"
+msgstr "تاريخ بداية التصريح"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__state
+msgid "State"
+msgstr "الحاله"
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+msgid "Status"
+msgstr "الحاله"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: hr_employee_requests
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_search_view
+#: model_terms:ir.ui.view,arch_db:hr_employee_requests.hr_hr_employee_request_type_form_view
+msgid "Type"
+msgstr "النوع"
+
+#. module: hr_employee_requests
+#: model:hr.employee.request.type,note:hr_employee_requests.request_type_shift_change
+msgid "Type of request that employees submit to Change their shifts"
+msgstr "نوع اعذار الموظفين الذي يمكن الموظف من التقديم على تغير شيفتات"
+
+#. module: hr_employee_requests
+#: model:hr.employee.request.type,note:hr_employee_requests.request_type_cleared
+msgid "Type of request that employees submit to Replace Employee"
+msgstr "نوع اعذار الموظفين الذي يمكن الموظف من التقديم على تبديل الموظف"
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,help:hr_employee_requests.field_hr_employee_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: hr_employee_requests
+#: model:ir.model.fields,field_description:hr_employee_requests.field_hr_employee_request__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""

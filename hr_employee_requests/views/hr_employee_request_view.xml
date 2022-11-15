@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Employee Requests-->
+        <record id="hr_hr_employee_request_form_view" model="ir.ui.view">
+            <field name="name">hr.employee.request.form.view</field>
+            <field name="model">hr.employee.request</field>
+            <field name="arch" type="xml">
+                <form string="Employee Request">
+                    <header>
+                        <field name="show_approve_button" invisible="1"/>
+                        <button name="action_confirm" type="object" string="Confirm" class="oe_highlight"
+                                attrs="{'invisible': [('state','!=','draft')]}" icon="fa-check"/>
+                        <button name="action_approve" type="object" string="Manger Approve" class="oe_highlight"
+                                attrs="{'invisible': ['|',('state','!=','confirmed'),('show_approve_button','=',False)]}"
+                                icon="fa-check-circle"/>
+                        <button name="action_done" type="object" string="Final Approve" class="oe_highlight"
+                                attrs="{'invisible': [('state','!=','approved')]}"
+                                icon="fa-check-circle" groups="hr.group_hr_manager"/>
+
+                        <button name="action_cancel" type="object" string="Cancel"
+                                attrs="{'invisible': [('state','in',('cancel','done'))]}"/>
+                        <button name="action_draft" type="object" groups="hr.group_hr_manager" icon="fa-refresh"
+                                string="Set to Draft" attrs="{'invisible': [('state','!=','cancel')]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,approved,done"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Number" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="active" invisible="1"/>
+                                <field name="type_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="employee_id" force_save="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="identification_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="department_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="job_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="date_start" />
+                                <field name="date_end" />
+                                <field name="company_id" groups="base.group_multi_company"/>
+                            </group>
+                        </group>
+                        <field name="request_details" placeholder="Details....."
+                               attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="hr_hr_employee_request_tree_view" model="ir.ui.view">
+            <field name="name">hr.employee.request.tree.view</field>
+            <field name="model">hr.employee.request</field>
+            <field name="arch" type="xml">
+                <tree string="Employee Request">
+                    <field name="name"/>
+                    <field name="type_id"/>
+                    <field name="employee_id"/>
+                    <field name="date_start"/>
+                    <field name="date_end"/>
+                    <field name="identification_id" optional="hide"/>
+                    <field name="department_id" optional="hide"/>
+                    <field name="job_id" optional="hide"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                    <field name="state" widget="badge" decoration-info="state == 'confirmed'" decoration-warning="state == 'approved'"
+                           decoration-success="state == 'done'" decoration-muted="state == 'cancel'"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_hr_employee_request_search_view" model="ir.ui.view">
+            <field name="name">hr.employee.request.search.view</field>
+            <field name="model">hr.employee.request</field>
+            <field name="arch" type="xml">
+                <search string="Employee Request">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="type_id"/>
+                    <separator/>
+                    <filter string="Start Date" name="start_date" date="date_start"/>
+                    <filter string="End Date" name="end_date" date="date_end"/>
+                    <group expand="0" string="Group By...">
+                        <filter name="group_by_type" string="Type" context="{'group_by':'type_id'}"/>
+                        <filter name="group_by_employee" string="Employee" context="{'group_by':'employee_id'}"/>
+                        <filter name="group_by_state" string="Status" context="{'group_by':'state'}"/>
+                        <separator/>
+                        <filter name="group_by_date_start" string="Date Start" context="{'group_by':'date_start:month'}"/>
+                        <filter name="group_by_date_end" string="Date End" context="{'group_by':'date_end:month'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="hr_hr_employee_request_action" model="ir.actions.act_window">
+            <field name="name">Employee Request</field>
+            <field name="res_model">hr.employee.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_group_by_type':1,'search_default_group_by_employee':1}</field>
+        </record>
+        <menuitem id="menu_hr_employee_requests"
+                  name="Requests"
+                  action="hr_employee_requests.hr_hr_employee_request_action"
+                  parent="hr_employee_requests.menu_hr_employee_requests_root"
+                  sequence="1"/>
+    </data>
+</odoo>
