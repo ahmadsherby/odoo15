@@ -3,9 +3,9 @@
     <data>
         <!-- Root Menu-->
         <menuitem id="menu_hr_employee_excuses_root"
-                  name="Employee excuses"
-                  parent="hr.menu_hr_root"
-                  sequence="4"/>
+                  name="Employee Excuses"
+                  web_icon="hr_employee_excuses,static/description/icon.png"
+                  sequence="186"/>
         <!-- Employee excuse Types-->
         <record id="hr_hr_employee_excuse_type_form_view" model="ir.ui.view">
             <field name="name">hr.employee.excuse.type.form.view</field>

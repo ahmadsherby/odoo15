@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_hr_employee_excuses" model="ir.actions.report">
+            <field name="name">Employee Excuses</field>
+            <field name="model">hr.employee.excuse</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">hr_employee_excuses.report_hr_employee_excuses</field>
+            <field name="report_file">hr_employee_excuses.report_hr_employee_excuses</field>
+            <field name="print_report_name">'Employee Excuses'</field>
+        </record>
+    </data>
+</odoo>

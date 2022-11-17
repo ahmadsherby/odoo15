@@ -178,4 +178,7 @@ class HrEmployeeexcuse(models.Model):
 		self.job_id = self.employee_id.job_id and self.employee_id.job_id.id or False
 		self.identification_id = self.employee_id.identification_id
 
+	def export_records_pdf(self):
+		return self.env.ref('hr_employee_excuses.action_hr_employee_excuses').report_action(self.ids)
+
 # Ahmed Salama Code End.

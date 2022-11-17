@@ -19,6 +19,9 @@
         'views/hr_employee_excuse_view.xml',
         'views/hr_employee_view_changes.xml',
 
+        'reports/hr_employee_report.xml',
+        'views/report_hr_employee_excuses.xml',
+
     ],
     'installable': True,
     'auto_install': False,
